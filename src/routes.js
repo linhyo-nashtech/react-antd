@@ -7,7 +7,7 @@ const LoginPage = React.lazy(() => import('./pages/Login'))
 const RegisterPage = React.lazy(() => import('./pages/Register'))
 
 const HomePage = React.lazy(() => import('./pages/Home'))
-const AboutPage = React.lazy(() => import('./pages/About'))
+const UserPage = React.lazy(() => import('./pages/User'))
 const PostPage = React.lazy(() => import('./pages/Post'))
 
 const loading = () => <div className="" />
@@ -41,8 +41,8 @@ const AllRoutes = () => {
           element: <LoadComponent component={HomePage} />
         },
         {
-          path: '/about',
-          element: <LoadComponent component={AboutPage} />
+          path: '/users',
+          element: <LoadComponent component={UserPage} />
         },
         {
           path: '/posts',

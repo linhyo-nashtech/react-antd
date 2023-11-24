@@ -33,13 +33,13 @@ const FullLayout = () => {
   const user = sessionStorage.getItem('user')
 
   if (!user) {
-    return (
-      <Navigate
-        to={'/login'}
-        state={{ from: location }}
-        replace
-      />
-    )
+    // return (
+    //   <Navigate
+    //     to={'/login'}
+    //     state={{ from: location }}
+    //     replace
+    //   />
+    // )
   }
 
   return (
@@ -69,13 +69,13 @@ const FullLayout = () => {
               Dashboard
             </Menu.Item>
           </Link>
-          <Link to="/about">
+          <Link to="/users">
             <Menu.Item
-              eventKey="about"
+              eventKey="users"
               icon={<UserOutlined />}
-              onClick={() => setCurrent('about')}
+              onClick={() => setCurrent('users')}
             >
-              About
+              Users
             </Menu.Item>
           </Link>
           <Link to="/posts">
